@@ -903,3 +903,38 @@ footer{
         flex-direction:column;
     }
 }
+
+
+/*============================
+          Contact
+=============================*/
+
+#contact{
+    padding:80px 10%;
+    background:rgba(0, 0, 0, 0.308);
+}
+
+#contact h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.contact-card{
+    width:70%;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.contact-card h4{
+    color:#0077ff;
+    margin-top:20px;
+}
+
+.contact-card p{
+    color:#444;
+    font-size:18px;
+}
