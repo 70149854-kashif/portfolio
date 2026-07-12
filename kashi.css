@@ -252,12 +252,12 @@ nav ul li a:hover{
 
     font-size:42px;
 
-    color:white;
+    color:rgb(23, 122, 179);
 
     border: 8px white;
 
 }
-
+/*
 #about h2::after{
 
     content:"";
@@ -275,6 +275,7 @@ nav ul li a:hover{
     border-radius:10px;
 
 }
+    */
 
 /* About Card */
 
@@ -346,11 +347,11 @@ nav ul li a:hover{
 
     font-size:40px;
 
-    color:white;
+    color:rgb(18, 168, 202);
 
 
 }
-
+/*
 #skills h2::after{
 
     content:"";
@@ -368,6 +369,7 @@ nav ul li a:hover{
     border-radius:10px;
 
 }
+    */
 
 /* Skills Container */
 
@@ -452,7 +454,7 @@ nav ul li a:hover{
 
     font-size:40px;
 
-    color:white;
+    color:rgb(36, 205, 217);
 
     margin-bottom:50px;
 
@@ -540,7 +542,7 @@ nav ul li a:hover{
     text-align:center;
     font-size:40px;
     margin-bottom:40px;
-    color:white;
+    color:rgb(24, 173, 196);
 }
 
 .education-card{
@@ -553,6 +555,7 @@ nav ul li a:hover{
 
 .education-card h3{
     margin-bottom:10px;
+    color:#00abf0
 }
 
 .education-card h4{
@@ -572,7 +575,7 @@ nav ul li a:hover{
     text-align:center;
     font-size:40px;
     margin-bottom:40px;
-    color:white;
+    color:rgb(28, 172, 212);
 }
 
 .experience-card{
@@ -720,10 +723,10 @@ nav ul li a:hover{
 
     font-size:40px;
 
-    color:white;
+    color:rgb(112, 212, 255);
 
 }
-
+/*
 #contact h2::after{
 
     content:"";
@@ -741,7 +744,7 @@ nav ul li a:hover{
     border-radius:10px;
 
 }
-
+*/
 .contact-container{
 
     display:flex;
@@ -937,4 +940,119 @@ footer{
 .contact-card p{
     color:#444;
     font-size:18px;
+}
+
+/* ================= Interests ================= */
+
+#interests{
+    padding:80px 10%;
+    background:#0000005c;
+}
+
+#interests h2{
+    text-align:center;
+    font-size:40px;
+    color:#00abf0;
+    margin-bottom:50px;
+}
+
+.interest-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.interest-box{
+    background:#111;
+    border:2px solid #00abf0;
+    border-radius:15px;
+    padding:25px;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.interest-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00abf0;
+}
+
+.interest-box h3{
+    color:#00abf0;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.interest-box p{
+    color:#d9d9d9;
+    font-size:16px;
+    line-height:1.7;
+}
+
+/*============================
+        animation
+=============================*/
+
+
+.interest-box{
+    background:#111;
+    border:2px solid #00abf0;
+    border-radius:15px;
+    padding:25px;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.interest-box{
+    background:#111;
+    border:2px solid #00abf0;
+    border-radius:15px;
+    padding:25px;
+    cursor:pointer;
+
+    opacity:0;
+    transform:translateY(50px);
+
+    animation:fadeUp 1s ease forwards;
+    transition:.4s ease;
+}
+
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.interest-box:nth-child(1){
+    animation-delay:.2s;
+}
+
+.interest-box:nth-child(2){
+    animation-delay:.4s;
+}
+
+.interest-box:nth-child(3){
+    animation-delay:.6s;
+}
+
+.interest-box:nth-child(4){
+    animation-delay:.8s;
+}
+
+.interest-box:nth-child(5){
+    animation-delay:1s;
+}
+
+.interest-box:nth-child(6){
+    animation-delay:1.2s;
+}
+
+.interest-box:hover{
+    transform:translateY(-12px) scale(1.04);
+    box-shadow:0 0 25px #00abf0;
 }
